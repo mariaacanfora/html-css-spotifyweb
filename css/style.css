@@ -13,7 +13,14 @@ body{
     color: white;
 }
 
+ul{
+    list-style: none;
+}
 
+ul li a{
+    text-decoration: none;
+    color: white;
+}
 
 /********************************************************************************/
 /* */
@@ -35,11 +42,12 @@ body{
 
 
 .right-container{
-    width: calc(100% - 50px);
+    /* width: calc(100% - 35px); */
     height: 100%;
     background-color: #141922;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 
 .banner-container{
@@ -66,11 +74,6 @@ body{
     font-size: 10px;
     display: inline-block;
     padding: 15px 6px;
-}
-
-.right-container .link-container ul li a{
-    text-decoration: none;
-    color: white;
 }
 
 .main-container{
@@ -105,6 +108,10 @@ body{
     background-color: black;
     display: flex;
     flex-direction: column;
+    padding: 0 3px;
+    color: #878787;
+    flex-shrink: 0;
+    position: relative;
 }
 
 .icon-container{
@@ -112,13 +119,15 @@ body{
 }
 
 .icon-container ul li{
-    padding: 5px 3px;
+    padding: 5px 0;
     text-align: center;
 }
 
 .icon-container ul li a img{
-    width: 60%;
+    width: 17px;
+    text-align: center;
 }
+
 
 .playlist-container{
     flex-grow: 1;
@@ -135,10 +144,10 @@ body{
 
 
 .profile-container ul li:first-child img{
-    width: 30%;
+    width: 11px;
 }
 
-.profile-container ul li:nth-child(2) img{
+.profile-container ul li:last-child img{
     background-color: #878787;
 }
 
@@ -150,3 +159,126 @@ body{
     overflow: hidden;
     border-radius: 50%;
 }
+
+@media screen and (max-width: 767px) {
+    .display-xs-none{
+        display: none;
+    }
+    
+}
+
+
+/********************************************************************************/
+/* iPad mini - width: 768px */
+/********************************************************************************/
+@media screen and (min-width: 768px) {
+    .asidebar-container{
+        width: 200px;
+        padding: 0 17px;
+    }
+    
+    .flex{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+
+    .icon-container ul li:first-child{
+        content: url(../img/logo.svg);
+        width: 70%;
+        padding: 15px 0 25px;
+    }
+
+    .icon-container ul{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+
+    .icon-container ul li{
+        font-size: 12px;
+    }
+
+    .icon-container ul li a{
+        display: flex;
+        align-items: center;
+    }
+
+    .icon-container ul li a span{
+        padding-left: 5px;
+    }
+
+    .icon-container ul li a img{
+        width: 25px;
+    }
+ 
+    .playlist-container{
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    .playlist-container ul li{
+        padding: 10px 0;
+        color: #878787;
+    }
+    
+    .playlist-container ul li a{
+        color: #878787;
+    }
+
+
+    .playlist-container .btn-container{
+        padding: 10px 0;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .btn{
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        font-size: 30px;
+        background-color: #A3A3A3;
+        text-align: center;
+        line-height: 30px;
+        font-weight: 600;
+    }
+    
+    .playlist-container .btn-container .btn a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .playlist-container .btn-container .btn-text{
+        padding: 0 7px;
+    }
+
+    .flex-grow{
+        flex-grow: 1;
+        overflow: auto;
+    }
+
+    .profile-container ul{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile-container ul li{
+        display: inline-block;
+        padding: 7px 0;
+    }
+
+    hr{
+        width: calc(200px - 34px);
+        color: #878787;
+        background-color: #878787;
+    }
+}
+
+
+
