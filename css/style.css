@@ -130,17 +130,23 @@ body{
 
 .profile-container ul li{
     text-align: center;
+    padding: 3px 0;
 }
 
 
 .profile-container ul li:first-child img{
-    width: 40%;
+    width: 30%;
 }
 
 .profile-container ul li:nth-child(2) img{
-    transform: scale(50%);
     background-color: #878787;
+}
+
+
+#profile-img-container{
+    display: inline-block;
+    height: 17px;
+    width: 17px;
     overflow: hidden;
     border-radius: 50%;
 }
-
