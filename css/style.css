@@ -455,7 +455,14 @@ span[class*="text"]{
     .icon-container ul li a{
         display: flex;
         align-items: center;
+        color: #C1C1C1;
     }
+
+    
+    .icon-container ul li a:hover{
+        color: white;
+    }
+
 
     .icon-container ul li a span{
         padding-left: 5px;
@@ -481,32 +488,49 @@ span[class*="text"]{
         color: #878787;
     }
 
+    .playlist-container ul li a:hover{
+        color: white;
+    }
+
 
     .playlist-container .btn-container{
         padding: 10px 0;
         font-size: 12px;
         display: flex;
         align-items: center;
+        color: #878787;
     }
     
-    .plus-btn{
-        display: inline-block;
-        width: 30px;
-        height: 30px;
-        font-size: 30px;
-        background-color: #A3A3A3;
-        text-align: center;
-        line-height: 30px;
-        font-weight: 600;
+    .playlist-container .btn-container .plus-btn{
+        flex-grow: 1;
     }
     
     .playlist-container .btn-container .plus-btn a{
         text-decoration: none;
-        color: black;
+        color:#878787;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 8px;
     }
 
+    .playlist-container .btn-container .plus-btn a span{
+        font-size: 14px;
+        line-height: 30px;
+        vertical-align: middle;
+
+    }
+    
+    .playlist-container .btn-container .plus-btn a:hover{
+        text-decoration: none;
+        color: white;
+    }
+    
     .playlist-container .btn-container .btn-text{
         padding: 0 7px;
+        text-decoration: none;
+        color: #878787;
     }
 
     .flex-grow{
@@ -524,6 +548,12 @@ span[class*="text"]{
         display: inline-block;
         padding: 7px 0;
     }
+
+    .profile-container ul li a{
+        text-decoration: none;
+        color: #878787;
+    }
+
 
     hr{
         width: calc(200px - 34px);
