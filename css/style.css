@@ -89,6 +89,8 @@ ul li a{
     padding: 15px 6px;
 }
 
+
+/* Main and Card */
 .main-container{
     width: 100%;
     /* background-color: burlywood; */
@@ -106,7 +108,7 @@ ul li a{
 
 .card-container{
     width: 100%;
-    background-color: cadetblue;
+   /*  background-color: cadetblue; */
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -115,10 +117,27 @@ ul li a{
 
 .card{
     width: calc(100% / 2 - 5px);
-    height: 100px;
     border: 1px solid;
+    text-align: center;
 }
 
+.card .card-img img{
+    width: 100%;
+    max-width: 250px;
+}
+
+.card .card-text{
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+.card .card-text h4{
+    padding-top: 5px;
+    font-size: 10px;
+    font-weight: 400;
+    color: #878787;
+}
 /* ASIDE-BAR SECTION */
 .asidebar-container{
     width: 40px;
@@ -189,8 +208,8 @@ ul li a{
 /********************************************************************************/
 /* iPad mini - width: 768px */
 /********************************************************************************/
-@media screen and (min-width: 560px) {
-    /* ASIDE-BAR */
+@media screen and (min-width: 768px) {
+    /*****ASIDE-BAR*****/
     .asidebar-container{
         width: 210px;
         padding: 0 17px;
@@ -258,7 +277,7 @@ ul li a{
         align-items: center;
     }
     
-    .btn{
+    .plus-btn{
         display: inline-block;
         width: 30px;
         height: 30px;
@@ -269,7 +288,7 @@ ul li a{
         font-weight: 600;
     }
     
-    .playlist-container .btn-container .btn a{
+    .playlist-container .btn-container .plus-btn a{
         text-decoration: none;
         color: black;
     }
@@ -301,10 +320,18 @@ ul li a{
     }
 
 
-    /* RIGHT SECTION */
-/*     .link-container{
-        padding-left:
-    } */
+    /*****RIGHT SECTION*****/
+    /* banner */
+ 
+
+    /* main and card */
+    .card{
+        width: calc(100% / 4 - 10px);
+        text-align: center;
+    }
+
+
+    .
 }
 
 
