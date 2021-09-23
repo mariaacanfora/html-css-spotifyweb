@@ -205,6 +205,10 @@ ul li a{
     flex-grow: 1;
 }
 
+.playlist-container h4{
+    color: white;
+}
+
 .profile-container{
     flex-shrink: 0;
 }
@@ -247,7 +251,6 @@ ul li a{
 .manage-container{
     flex-shrink: 0;
     display: flex;
-    justify-content: space-between;
 }
 
 .status-container{
@@ -274,6 +277,7 @@ ul li a{
 
 .song-text-container{
     width: 50%;
+    padding-left: 10px;
 }
 
 
@@ -299,8 +303,10 @@ ul li a{
 
 
 .song-icon-container{
+    display: flex;
     font-size: 10px;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 5px;
     color: #878787;
 }
 
@@ -441,7 +447,7 @@ span[class*="text"]{
 
 
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 649px){
     .display-xs-none{
         display: none;
     }
@@ -454,11 +460,11 @@ span[class*="text"]{
 @media screen and (min-width: 650px) {
     /*****ASIDE-BAR*****/
     .aside-bar-container{
-        width: 210px;
-        padding: 0 17px;
+        width: 250px;
+        padding: 0 20px;
     }
     
-    .flex{
+    .flex-column{
         display: flex;
         flex-direction: column;
         flex-grow: 1;
@@ -480,7 +486,7 @@ span[class*="text"]{
     }
 
     .icon-container ul li{
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .icon-container ul li a{
@@ -510,6 +516,11 @@ span[class*="text"]{
         overflow: hidden;
     }
 
+    .playlist-container h4{
+        font-size: 14px;
+
+    }
+
     .playlist-container ul li{
         padding: 10px 0;
         color: #878787;
@@ -517,6 +528,7 @@ span[class*="text"]{
     
     .playlist-container ul li a{
         color: #878787;
+        font-size: 14px;
     }
 
     .playlist-container ul li a:hover{
@@ -526,7 +538,7 @@ span[class*="text"]{
 
     .playlist-container .btn-container{
         padding: 10px 0;
-        font-size: 12px;
+        font-size: 14px;
         display: flex;
         align-items: center;
         color: #878787;
@@ -539,7 +551,7 @@ span[class*="text"]{
     .playlist-container .btn-container .plus-btn a{
         text-decoration: none;
         color:#878787;
-        font-size: 30px;
+        font-size: 35px;
         display: flex;
         align-items: center;
         justify-content: flex-start;
@@ -548,8 +560,9 @@ span[class*="text"]{
 
     .playlist-container .btn-container .plus-btn a span{
         font-size: 14px;
-        line-height: 30px;
+        line-height: 35px;
         vertical-align: middle;
+        font-weight: bold;
 
     }
     
@@ -585,6 +598,14 @@ span[class*="text"]{
         color: #878787;
     }
 
+    .profile-container ul li a.flex-column{
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+        color: white;
+        font-weight: bold;
+
+    }
 
     hr{
         width: calc(200px - 34px);
@@ -608,4 +629,56 @@ span[class*="text"]{
     }
 
 
+    /*****PLAY-BAR SECTION*****/
+    .playbar-container{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .song-container, 
+    .manage-container{
+        width: 30%;
+    }
+
+    .status-container{
+        width: 40%;
+    }
+
+    .status-btn-container{
+        font-size: 14px;
+    }
+
+    .status-btn-container i:nth-child(3){
+        font-size: 25px;
+    }
+
+
+    .song-container .song-img-container{
+        padding: 0;
+    }
+
+    .song-container .song-text-container{
+        justify-content: center;
+    }
+
+    .song-container .song-text-container h3{
+        font-size: 10px;
+    }
+
+    .song-container .song-text-container h4 a{
+        font-size: 8px;
+    }
+
+    .song-icon-container i{
+        font-size: 12px;
+    }
+
+}
+
+
+/********************************************************************************/
+/* Width: 650px */
+/********************************************************************************/
+@media screen and (min-width: 1024px) {
+    
 }
