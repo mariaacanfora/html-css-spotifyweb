@@ -31,6 +31,7 @@ ul li a{
     width: 100%;
     height: 50px;
     background-color: aqua;
+
 }
 
 .content-container{
@@ -171,9 +172,10 @@ ul li a{
 /********************************************************************************/
 /* iPad mini - width: 768px */
 /********************************************************************************/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 560px) {
+    /* ASIDE-BAR */
     .asidebar-container{
-        width: 200px;
+        width: 210px;
         padding: 0 17px;
     }
     
@@ -278,6 +280,12 @@ ul li a{
         color: #878787;
         background-color: #878787;
     }
+
+
+    /* RIGHT SECTION */
+/*     .link-container{
+        padding-left:
+    } */
 }
 
 
