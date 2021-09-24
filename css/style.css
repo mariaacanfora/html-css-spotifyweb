@@ -126,6 +126,8 @@ ul li a{
 
 .card .card-img{
     position: relative;
+    display: block;
+    color: white;
 }
 
 .card:hover .card-img::after{
@@ -145,11 +147,11 @@ ul li a{
     transform: translate(-50%, -50%);
     font-size: 50px;
     visibility: hidden;
+    z-index: 98;
 }
 .card:hover .card-icon-play{
     visibility: visible;
 }
-
 
 .card .card-img img{
     width: 100%;
@@ -157,8 +159,11 @@ ul li a{
 }
 
 .card .card-text{
+    display: inline-block;
+    text-decoration: none;
     padding-top: 10px;
     text-align: center;
+    color: white;
 }
 
 
@@ -447,7 +452,7 @@ span[class*="text"]{
 
 
 
-@media screen and (max-width: 649px){
+@media screen and (max-width: 575px){
     .display-xs-none{
         display: none;
     }
@@ -457,7 +462,7 @@ span[class*="text"]{
 /********************************************************************************/
 /* Width: 650px */
 /********************************************************************************/
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 576px) {
     /*****ASIDE-BAR*****/
     .aside-bar-container{
         width: 250px;
@@ -635,10 +640,10 @@ span[class*="text"]{
         padding-bottom: 10px;
     }
     
-    .song-container, 
+    /* .song-container, 
     .manage-container{
         width: 30%;
-    }
+    } */
 
     .status-container{
         width: 40%;
@@ -677,8 +682,8 @@ span[class*="text"]{
 
 
 /********************************************************************************/
-/* Width: 650px */
+/* Width: 768px */
 /********************************************************************************/
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
     
 }
