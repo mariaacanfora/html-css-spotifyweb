@@ -82,15 +82,14 @@ section{
 }
 
 .right-container .link-container ul li{
-    font-size: 10px;
     display: inline-block;
     padding: 15px 6px;
-    color: #878787;
     transition: color .3s;
 }
 
 .right-container .link-container ul li a{
     color: #878787;
+    font-size: 11px;
 }
 
 .right-container .link-container ul li:hover a{
@@ -441,7 +440,7 @@ span[class*="text"]{
 }
 
 .manage-container a{
-    display: inline-block
+    display: inline-block;
     font-size: 10px;
     padding: 0 3px;
     color: white;
@@ -719,8 +718,6 @@ span[class*="text"]{
         font-size: 25px;
     }
 
-
-
 }
 
 
@@ -728,9 +725,38 @@ span[class*="text"]{
 /* Width: 768px */
 /********************************************************************************/
 @media screen and (min-width: 768px) {
+    /*RIGHT SECTION*/
+
+    /* link */
+    .link-container a{
+        font-size: 12px;
+    }
+
+
+
     .card{
         width: calc(100% / 4 - 10px);
         text-align: center;
         position: relative;
+    }
+
+    /* Play-bar */
+    .song-container,
+    .manage-container{
+        flex-grow: 2;
+    }
+
+    .song-container .song-icon-container{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .song-container .song-icon-container i{
+        padding: 0 3px;
+    }
+
+
+    .status-container{
+        flex-grow: 3;
     }
 }
