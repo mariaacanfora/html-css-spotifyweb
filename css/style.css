@@ -818,6 +818,15 @@ span[class*="text"]{
 
 
     /* PLAYBAR */
+    /* Song container */
+    .song-container .song-text-container h3,
+    .song-container .song-icon-container a i{
+        font-size: 14px;
+    }
+
+    .song-container .song-text-container h4 a{
+        font-size: 12px;
+    }
 
     /* Status container */
     .status-container{
