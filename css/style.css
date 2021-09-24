@@ -332,7 +332,6 @@ section{
 }
 
 
-
 .song-icon-container{
     display: flex;
     font-size: 12px;
@@ -340,6 +339,12 @@ section{
     gap: 5px;
     color: #878787;
 }
+
+
+.song-icon-container a i{
+    color: #878787;
+}
+
 
 .song-icon-container i:hover{
     color: white;
@@ -363,7 +368,11 @@ section{
     gap: 8px;
 }
 
-.status-btn-container i:nth-child(3){
+.status-btn-container a{
+    color: white;
+}
+
+.status-btn-container a:nth-child(3){
     font-size: 23px;
 }
 
@@ -431,9 +440,11 @@ span[class*="text"]{
     justify-content: space-around;
 }
 
-.manage-container i{
+.manage-container a{
+    display: inline-block
     font-size: 10px;
     padding: 0 3px;
+    color: white;
 }
 
 .manage-container i:hover{
@@ -520,7 +531,7 @@ span[class*="text"]{
     }
 
     .icon-container ul li{
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .icon-container ul li a{
@@ -562,7 +573,7 @@ span[class*="text"]{
     
     .playlist-container ul li a{
         color: #878787;
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .playlist-container ul li a:hover{
@@ -597,7 +608,6 @@ span[class*="text"]{
         line-height: 35px;
         vertical-align: middle;
         font-weight: bold;
-
     }
     
     .playlist-container .btn-container .plus-btn a:hover{
@@ -642,7 +652,7 @@ span[class*="text"]{
     }
 
     hr{
-        width: calc(200px - 34px);
+        width: calc(220px - 40px);
         color: #878787;
         background-color: #878787;
     }
@@ -668,11 +678,26 @@ span[class*="text"]{
         padding-top: 10px;
         padding-bottom: 10px;
     }
-    
-    /* .song-container, 
-    .manage-container{
-        width: 30%;
-    } */
+
+    .song-container .song-text-container h3,
+    .song-container .song-icon-container a i,
+    .manage-container i
+    {
+        font-size: 12px;
+    }
+
+    .song-container .song-text-container h4 a{
+        font-size: 10px;
+    }
+
+    .song-container .song-img-container{
+        padding: 0;
+    }
+
+    .song-container .song-text-container{
+        justify-content: center;
+    }
+
 
     .status-container{
         width: 40%;
@@ -695,25 +720,6 @@ span[class*="text"]{
     }
 
 
-    .song-container .song-img-container{
-        padding: 0;
-    }
-
-    .song-container .song-text-container{
-        justify-content: center;
-    }
-
-    .song-container .song-text-container h3{
-        font-size: 10px;
-    }
-
-    .song-container .song-text-container h4 a{
-        font-size: 8px;
-    }
-
-    .song-icon-container i{
-        font-size: 12px;
-    }
 
 }
 
