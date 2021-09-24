@@ -144,6 +144,11 @@ section{
     color: white;
 }
 
+.card .card-img img{
+    display: block;
+    margin: auto;
+}
+
 .card:hover .card-img::after{
     content: "";
     position: absolute;
@@ -263,7 +268,7 @@ section{
     position: relative;
     z-index: 99;
     display: flex;
-    padding: 15px 10px;
+    padding: 10px 10px;
 }
 
 .song-container,
@@ -279,7 +284,7 @@ section{
 
 
 .song-container .song-img-container img{
-    height: 100%;
+    height: 95%;
     
 }
 
@@ -345,13 +350,14 @@ section{
 
 .status-btn-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    font-size: 10px;
+    font-size: 16px;
+    gap: 8px;
 }
 
 .status-btn-container i:nth-child(3){
-    font-size: 15px;
+    font-size: 23px;
 }
 
 .status-btn-container i:hover{
@@ -362,6 +368,8 @@ section{
 .status-bar-container{
     display: flex;
     align-items: center;
+    max-width: 300px;
+    width: 100%;
 }
 
 .status-bar{
@@ -474,12 +482,12 @@ span[class*="text"]{
 
 
 /********************************************************************************/
-/* Width: 650px */
+/* Width: 576px */
 /********************************************************************************/
 @media screen and (min-width: 576px) {
     /*****ASIDE-BAR*****/
     .aside-bar-container{
-        width: 250px;
+        width: 220px;
         padding: 0 20px;
     }
     
@@ -661,10 +669,18 @@ span[class*="text"]{
 
     .status-container{
         width: 40%;
+        align-items: center;
+    }
+
+    .status-bar-container{
+        max-width: 300px;
+        width: 100%;
     }
 
     .status-btn-container{
         font-size: 14px;
+        justify-content: center;
+        gap: 8px;
     }
 
     .status-btn-container i:nth-child(3){
