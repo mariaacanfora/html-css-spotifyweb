@@ -177,6 +177,13 @@ section{
     max-width: 250px;
 }
 
+.circle{
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+
 .card .card-text{
     display: inline-block;
     text-decoration: none;
