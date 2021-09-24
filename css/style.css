@@ -291,7 +291,7 @@ section{
 
 
 .song-container .song-img-container img{
-    height: 95%;
+    height: 100%;
     
 }
 
@@ -313,13 +313,13 @@ section{
 
 
 .song-container .song-text-container h3{
-    font-size: 8px;
+    font-size: 12px;
 }
 
 
 .song-container .song-text-container h4 a{
     display: inline-block;
-    font-size: 7px;
+    font-size: 9px;
     font-weight: 400;
     color: #878787;
     text-decoration: none;
@@ -335,7 +335,7 @@ section{
 
 .song-icon-container{
     display: flex;
-    font-size: 10px;
+    font-size: 12px;
     justify-content: center;
     gap: 5px;
     color: #878787;
@@ -419,7 +419,7 @@ section{
 
 
 span[class*="text"]{
-    font-size: 8px;
+    font-size: 9px;
     padding: 0 5px;
     flex-shrink: 0;
 }
@@ -432,7 +432,7 @@ span[class*="text"]{
 }
 
 .manage-container i{
-    font-size: 8px;
+    font-size: 10px;
     padding: 0 3px;
 }
 
