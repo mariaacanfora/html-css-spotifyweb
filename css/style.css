@@ -113,6 +113,10 @@ section{
     font-size: 22px;
 }
 
+.main-container h3{
+    font-size: 13px;
+}
+
 .main-container h4{
     font-size: 10px;
     color: #878787;
