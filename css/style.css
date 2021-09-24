@@ -21,6 +21,10 @@ ul li a{
     text-decoration: none;
 }
 
+section{
+    padding-bottom: 35px;
+}
+
 /********************************************************************************/
 /* */
 /********************************************************************************/
@@ -106,8 +110,13 @@ ul li a{
 }
 
 .main-container h2{
-    padding-bottom: 30px;
     font-size: 22px;
+}
+
+.main-container h4{
+    font-size: 10px;
+    color: #878787;
+    padding-top: 10px;
 }
 
 .card-container{
@@ -115,6 +124,7 @@ ul li a{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    padding-top: 30px;
 }
 
 
@@ -685,5 +695,9 @@ span[class*="text"]{
 /* Width: 768px */
 /********************************************************************************/
 @media screen and (min-width: 768px) {
-    
+    .card{
+        width: calc(100% / 4 - 10px);
+        text-align: center;
+        position: relative;
+    }
 }
