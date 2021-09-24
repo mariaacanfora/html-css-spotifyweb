@@ -90,7 +90,21 @@ section{
 .right-container .link-container ul li a{
     color: #878787;
     font-size: 11px;
+    position: relative;
 }
+
+
+.right-container .link-container ul li:first-child a::after{
+    content: "";
+    width: 50%;
+    height: 2px;
+    background-color: #ADFF2F;
+    position: absolute;
+    bottom: -2px;
+    left: calc(50%);
+    transform: translateX(-50%);
+}
+
 
 .right-container .link-container ul li:hover a{
     color: white;
@@ -227,8 +241,14 @@ section{
     text-align: center;
 }
 
-.icon-container ul li:hover{
+.icon-container ul li:hover a{
     filter: brightness(100);
+}
+
+.icon-container ul li:nth-child(2){
+    margin-left: -20px;
+    padding-left: 20px;
+    border-left: 2px solid #ADFF2F;
 }
 
 .playlist-container{
