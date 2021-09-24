@@ -160,6 +160,8 @@ section{
 .card .card-img img{
     display: block;
     margin: auto;
+    width: 100%;
+    max-width: 270px;
 }
 
 .card:hover .card-img::after{
@@ -183,11 +185,6 @@ section{
 }
 .card:hover .card-icon-play{
     visibility: visible;
-}
-
-.card .card-img img{
-    width: 100%;
-    max-width: 250px;
 }
 
 .circle{
